@@ -1,15 +1,15 @@
 // pages/about.jsx
 
 import Link from "next/link";
-import Navbar from "../components/navbar/page";
-import Footer from "../components/footer/page";
+import Navbar from "../../components/navbar/page";
+import Footer from "../../components/footer/page";
 
 export default function AboutPage() {
     return (
         <>
 
-            <div className="min-h-screen  bg-white text-gray-800 font-sans">
             <Navbar />
+            <div className="min-h-screen  bg-white text-gray-800 font-sans">
 
                 {/* Hero Section */}
                 <section className="relative  bg-[url('/images/hero-bg.jpg')] bg-cover bg-center text-white py-32 px-6">
@@ -40,7 +40,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* Features Section with Icons */}
-                <section className="py-20 px-6 bg-gray-100">
+                <section className="py-20 px-6 bg-blue-100">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-blue-700 mb-10">Why Choose LetsTalk?</h2>
                         <div className="grid md:grid-cols-3 gap-10">
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* Team Section */}
-                <section className="py-20 px-6 bg-gray-50">
+                <section className="py-20 px-6 bg-blue-100">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-blue-700 mb-10">Meet the Team</h2>
                         <div className="grid md:grid-cols-3 gap-10">
@@ -166,7 +166,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* Call to Action */}
-                <section className="py-20 px-6 bg-blue-400 text-white text-center relative overflow-hidden">
+                <section className="py-20 px-6 bg-blue-300 text-white text-center relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10 bg-[url('/images/cta-bg.jpg')] bg-cover bg-center" />
                     <div className="relative z-10 max-w-4xl mx-auto">
                         <h2 className="text-4xl font-bold mb-4">Ready to Connect?</h2>

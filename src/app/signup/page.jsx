@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Navbar from "../components/navbar/page";
+import Navbar from "../../components/navbar/page";
 
 export default function Auth() {
   const [isLogin, setIsLogin] = useState(true);
@@ -33,12 +33,12 @@ export default function Auth() {
                     placeholder="Enter your password"
                   />
                 </div>
-                <button
+                <Link href="/workspace"
                   type="submit"
                   className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
                 >
                   Login
-                </button>
+                </Link>
               </form>
               <p className="text-sm text-gray-500 mt-4 text-center">
                 Don’t have an account?{" "}

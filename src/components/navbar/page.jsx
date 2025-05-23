@@ -11,16 +11,16 @@ const Navbar = () => {
 
   const isActive = (href) => pathname === href;
 
-  return (
+  return (<>
     <nav className="bg-white/80 w-full backdrop-blur shadow-md fixed top-0 z-50">
       <div className="w-11/13 mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/home" className="text-2xl font-bold text-blue-600 select-none">
-          Let's Talk
+          Let's Meet
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden lg:flex space-x-8 text-base font-medium">
+        <ul className="hidden lg:flex space-x-8 text-base font-bold">
           {[
             { name: "Home", href: "/home" },
             { name: "About", href: "/about" },
@@ -84,7 +84,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full backdrop-blur-md bg-white shadow-xl border-t border-gray-200 transition-all duration-300 ease-in-out">
-          <ul className="flex flex-col px-6 py-6 space-y-5 text-gray-800 font-medium text-base">
+          <ul className="flex flex-col  px-6 py-6 space-y-5 text-gray-800 font-medium text-base">
             {[
               { name: "Home", href: "/home" },
               { name: "About", href: "/about" },
@@ -132,6 +132,9 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+
+
+</>
   );
 };
 

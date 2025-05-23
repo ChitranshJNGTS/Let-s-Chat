@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Navbar from "../components/navbar/page";
-import Footer from "../components/footer/page";
+import Navbar from "../../components/navbar/page";
+import Footer from "../../components/footer/page";
 import { useState } from "react";
 
 export default function PricingSection() {
@@ -132,7 +132,7 @@ export default function PricingSection() {
         </div>
 
         {/* FAQ Section */}
-        <div className="mt-20 max-w-3xl mx-auto">
+        <div className="mt-20 max-w-3/4 mx-auto">
           <motion.h3
             className="text-3xl font-bold text-gray-800 text-center"
             initial={{ opacity: 0, y: -20 }}

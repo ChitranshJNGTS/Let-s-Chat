@@ -2,8 +2,8 @@
 import { ArrowRight, CheckCircle, Users, Shield } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Navbar from "../components/navbar/page";
-import Footer from "../components/footer/page";
+import Navbar from "../../components/navbar/page";
+import Footer from "../../components/footer/page";
 
 export default function LandingPage() {
   return (
@@ -28,7 +28,7 @@ export default function LandingPage() {
           </p>
           <div className="flex justify-center md:justify-start gap-4">
             <Link
-              href="meetjoin"
+              href="/signup"
               className="inline-flex items-center px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition shadow"
             >
               Get Started

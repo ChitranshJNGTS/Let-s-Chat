@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Navbar from "../components/navbar/page";
+import Navbar from "../../components/navbar/page";
 import Image from "next/image";
 
 export default function MeetPage() {

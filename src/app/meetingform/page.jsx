@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Navbar from "../components/navbar/page";
+import Navbar from "../../components/navbar/page";
 import { FaRegCopy, FaCheck } from "react-icons/fa";
 
 const MeetingForm = () => {

@@ -19,15 +19,15 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <Link
-                  href="#features"
+                  href="/home"
                   className="hover:text-indigo-500 transition"
                 >
-                  Features
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#about"
+                  href="/about"
                   className="hover:text-indigo-500 transition"
                 >
                   About
@@ -35,10 +35,18 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/features"
                   className="hover:text-indigo-500 transition"
                 >
-                  Contact
+                  Features
+                </Link>
+              </li>
+               <li>
+                <Link
+                  href="/price"
+                  className="hover:text-indigo-500 transition"
+                >
+                  Prices
                 </Link>
               </li>
             </ul>

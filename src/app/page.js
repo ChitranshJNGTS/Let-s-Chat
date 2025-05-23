@@ -1,4 +1,5 @@
-import LandingPage from "./chatroom/page";
+import LandingPage from "./home/page";
+
 
 
 export default function Home() {
